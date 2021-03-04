@@ -1,0 +1,37 @@
+
+<div class="container" >
+    <div class="jumbotron shadow-lg p-3 mb-5 bg-white rounded">
+        <h1>Medicine <img alt="Angular Logo" src="/assets/tab.PNG" width="30" height="30"> at your Door Step</h1><hr>
+        <p class="lead">As the pharmacy profession and attitudes toward it evolve, pharmacists are at the forefront of many important issues, including drug safety, affordable health care, and customer service. Avail the best services and kindly do share your feedback.</p>
+        <p><a href="" target="_blank" class="btn btn-success btn-lg">Rate the services</a></p>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4 col-lg-6 col-xl-6" *ngFor="let card of cards" style="background-color: transparent ;">
+          <div class="shadow-lg p-3 mb-5 bg-white rounded">
+             <div><h2>{{card.name}}</h2> <span class="w3-tag w3-black styles">{{card.ratings}} <i class="fa fa-star" style="color: orange;"
+                aria-hidden="true"></i></span></div>
+                <img src="/assets/medications_03.png" class="rounded-circle ml-auto" alt="Cinque Terre" width="204" height="136">
+            <p>{{card.description}}</p>
+            <p><b>Medicine For</b>: {{card.medicinefor}}</p>
+            <p><a target="_blank" class="btn btn-success ml-auto"><b>Price -$</b>{{card.price}}</a>
+            </p>
+
+        </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Copyright &copy; Med For Sure</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <a href="#" class="text-dark">Terms of Use</a>
+                <span class="text-muted mx-2">|</span>
+                <a href="#" class="text-dark">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</div>
